@@ -1,7 +1,8 @@
 on: # Trigger the workflow on push to the main branch
   push: # Trigger the workflow on push to the main branch
-  branches: # Specify the branches to trigger the workflow
+    branches: # Specify the branches to trigger the workflow
     - main  # Trigger the workflow on push to the main branch
+
 jobs: # Define the jobs for the workflow
   myHola: # Define a job named "myHola"
     runs-on: ubuntu-latest # Specify the operating system for the job
