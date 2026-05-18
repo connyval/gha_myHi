@@ -10,4 +10,4 @@ jobs: # Define the jobs for the workflow
         uses: actions/checkout@v2 # Use the checkout action to checkout the code from the repository
 
       - name: Run myHola script # Step to run the myHola script
-        run: echo "Hola, my GitHub Actions !" # Run a command to print "Hola, my GitHub Actions !" in the consol
+        run: echo "Hola, my GitHub Actions2 !" # Run a command to print "Hola, my GitHub Actions !" in the consol
