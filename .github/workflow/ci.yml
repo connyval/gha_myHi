@@ -1,0 +1,13 @@
+on: # Trigger the workflow on push to the main branch
+  push: # Trigger the workflow on push to the main branch
+  branches: # Specify the branches to trigger the workflow
+    - main  # Trigger the workflow on push to the main branch
+jobs: # Define the jobs for the workflow
+  myHola: # Define a job named "myHola"
+    runs-on: ubuntu-latest # Specify the operating system for the job
+    steps: # Define the steps for the job
+      - name: Checkout code # Step to checkout the code from the repository
+        uses: actions/checkout@v2 # Use the checkout action to checkout the code from the repository
+
+      - name: Run myHola script # Step to run the myHola script
+        run: echo "Hola, my GitHub Actions !" # Run a command to print "Hola, my GitHub Actions !" in the consol
